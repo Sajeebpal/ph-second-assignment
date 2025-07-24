@@ -166,6 +166,59 @@ body{
 }
 
 
+/* Plant lover section styles */
+
+.plant-lover-sec{
+    display: flex;
+    align-items: center
+    ;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    position: relative;
+
+}
+
+/* Flex property should apply on the immediate child */
+.plant-lover-sec > div{
+    flex: 1;  
+}
+.lover-pic{
+    width: 100%;
+}
+
+/* Animation for trusted batch */
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.trusted-batch{
+    width: 300px;
+    position: absolute;
+    left: 360px;
+    top: -140px;
+    animation: rotation 4s ease-in-out 1s infinite alternate;
+
+}
+
+.lover-tittle{
+    font-size: 3.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.lover-sec-content ul li{
+    font-size: 1.4rem;
+    color: var(--des-color);
+    padding-bottom: 20px;
+}
 
 
 
@@ -198,6 +251,7 @@ body{
         flex-direction: column-reverse;
         align-items: normal;
         gap: 2rem;
+        margin-top: 50px;
     }
     .ban-tittle{
         font-size: 2rem;
@@ -247,6 +301,36 @@ body{
         font-size: .9rem;
         font-weight: 700;
         padding: 20px 20px;
-    /* margin-top: 20px; */
-}
+    
+    }
+
+    /* Plant lover sec styles */
+    .plant-lover-sec{
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 40px;
+        overflow: hidden;
+        margin-top: 70px;
+    }
+
+    .trusted-batch{
+    width: 150px;
+    position: absolute;
+    left: 62vmin;
+    top: -15px;
+    animation: rotation 4s ease-in-out 1s infinite alternate;
+
+    }
+
+    .lover-tittle{
+        font-size: 2rem;
+    }
+    .lover-sec-content ul li{
+        font-size: 1.05rem;
+        padding-bottom: 15px;
+    }
+
+
+
+
 }
