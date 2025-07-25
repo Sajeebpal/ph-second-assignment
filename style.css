@@ -161,7 +161,7 @@ body{
 
 }
 .plant-card{
-    box-shadow: 0 2px 2px rgb(134, 134, 134);
+    box-shadow: 2px 0 5px rgba(182, 182, 182, 0.445);
     /* border-radius: 150px; */
 }
 
@@ -174,8 +174,7 @@ body{
 
 .plant-lover-sec{
     display: flex;
-    align-items: center
-    ;
+    align-items: center;
     justify-content: space-between;
     gap: 80px;
     margin-top: 200px;
@@ -327,7 +326,7 @@ body{
     height: 500px;
     background-image: url('assets/news-letter-bg.png');
     background-size: cover;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,8 +375,13 @@ footer{
 
 footer > div{
     flex: 1;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
+.footer-logo-des{
+    margin-right: 120px;
+}
+
+
 .quick-menu ul{
     margin: 0;
     padding: 0;
@@ -459,15 +463,15 @@ footer > div{
     }
 
     .banner-content{
-        margin: 0 20px;
+        margin: 0 15px;
     }
 
 
     /* Plant section styles */
     .plant-card-container{
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 0 20px;
+        gap: 15px;
+        padding: 0 15px;
     }
 
     .plant-tittle{
@@ -480,7 +484,8 @@ footer > div{
         font-size: 1rem;
     }
     .plant-content{
-        max-width: 90vw;
+        padding: 0 15px;
+        /* max-width: 90vw; */
     }
 
     .plant-image{
@@ -490,19 +495,20 @@ footer > div{
         font-size: 1.1rem;
     }
     .price{
-        font-size: 1rem;
+        font-size: .9rem;
+        margin: 10px 0;
     }
 
     .add-btn{
         font-size: .9rem;
         font-weight: 700;
-        padding: 20px 20px;
+        padding: 15px 20px;
     
     }
 
     /* Plant lover sec styles */
     .plant-lover-sec{
-        padding: 0 20px;
+        padding: 0 15px;
         flex-direction: column;
         gap: 40px;
         overflow: hidden;
@@ -532,7 +538,7 @@ footer > div{
         margin: 0;
     }
     .deal-sec{
-        margin: 0 20px;
+        padding: 0 15px;
     }
 
     .deal-des{
@@ -567,8 +573,8 @@ footer > div{
     /* Subscribe sec styles */
     .subscibe-sec{
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        height: 350px;
+        background-size: 140% 300px;
+        height: 300px;
     }
     .join-tittle{
         font-size: 1.8rem;
@@ -581,7 +587,7 @@ footer > div{
     }
     .input-container input[type="button"]{
         width: 120px;
-        font-size: .9rem;
+        font-size: 1rem;
         padding: 15px;
 
     }
@@ -592,7 +598,7 @@ footer > div{
                 
     }
     footer > div{
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .social-link{
         justify-content: flex-start;
@@ -604,9 +610,6 @@ footer > div{
         margin-bottom: 20px;
     }
 
-    .footer-logo-des img{
-        width: 180px;
-    }
-    
+  
 
 }
